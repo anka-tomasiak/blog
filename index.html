@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kłosie Zwiedzają - minimalistyczny blog podróżniczy o trasach, miastach i miejscach, do których chce się wracać."
+    />
+    <title>Kłosie Zwiedzają</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Kłosie Zwiedzają - strona główna">
+        <img class="brand-logo" src="assets/logo-klosie.png" alt="Kłosie" />
+      </a>
+      <nav class="top-nav" aria-label="Główne">
+        <a href="#wyprawy">Wycieczki</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#o-blogu">O blogu</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="assets/hero-malta.jpg"
+            alt="Panorama miasta z kopułą kościoła i dużymi chmurami nad Maltą"
+          />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Blog podróżniczy</p>
+          <h1 id="hero-title">Kłosie Zwiedzają</h1>
+          <p>
+            Relacje, trasy i praktyczne notatki z miejsc, które najlepiej poznaje
+            się powoli: przez drogi, postoje, zachwyty i małe logistyczne zwycięstwa.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#wyprawy">Nasze wycieczki</a>
+            <a class="button ghost" href="#mapa">Mapa</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="o-blogu" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">Miejsce dla naszych historii</p>
+          <h2 id="intro-title">Każda podróż dokłada kolejny rozdział do naszej kolekcji wspomnień.</h2>
+          <p>
+          Każdy wyjazd to nowa historia. Lubimy planować, odkrywać i wyciskać z każdej podróży maksimum, 
+          ale wiemy też, że najpiękniejsze chwile często czekają tam, gdzie się ich nie spodziewamy.
+          Szukamy lokalnych smaków, niezwykłych widoków i ludzi, którzy sprawiają, że dane miejsce zostaje z nami na długo.
+        </p>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Filtrowanie wypraw">
+        <div>
+          <p class="eyebrow">Archiwum</p>
+          <h2 id="wyprawy">Wycieczki</h2>
+        </div>
+        <div class="filters" role="list" aria-label="Kategorie">
+          <button class="filter is-active" type="button" data-filter="all">Wszystkie</button>
+          <button class="filter" type="button" data-filter="europa">Europa</button>
+          <button class="filter" type="button" data-filter="usa">USA</button>
+          <button class="filter" type="button" data-filter="city">Miasta</button>
+        </div>
+      </section>
+
+      <section class="trip-grid" aria-label="Lista wypraw">
+        <article class="trip-card" data-tags="europa">
+          <a href="https://klosiezwiedzaja.blogspot.com/2022/08/bakany-trip.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEAkJpFR_vcebCErNnSvOQLj-HFSjxe1tADpkEoynWLdJVZeYg9exxIJDeQHVtYUB1ohjtiSN17CH1Xaj22QW1uW06YOQ2-WRb_W9jUPizi6BLew7IZZZfqqDH8IV4eE_1EhwIwaaf744Vxno6G3QFUAfrfRh3va3tHt_0BnCmAzgbr2H5K60geyT_Bg/w640-h480/IMG_9946.jpg"
+              alt="Krajobraz z wycieczki na Bałkany"
+            />
+            <div>
+              <span>2022</span>
+              <h3>Bałkany</h3>
+              <p>Chorwacja, Bośnia i Hercegowina, Czarnogóra, Albania, Grecja i Macedonia Północna.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="trip-card" data-tags="europa city">
+          <a href="https://klosiezwiedzaja.blogspot.com/2022/03/lizbona.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCNbQ1O8zUi09OtQA0U68YWtq0T4gaPhnMpTlpr7VpQ4QKLZ-OUJkNNHkh4V0u2FKAUhZyQdO2yevnKB8miAUBYmTso2yL_r6MOZiTpSTavtKo9946-s0WZNHnudO1_ZN9oz3NMA5qsVGz4HkZIxZlVcIS78a8ZJ8ibO-f4x-UJjeYc8H_mwICkaKjkA/w640-h480/IMG_8055.jpeg"
+              alt="Lizbona"
+            />
+            <div>
+              <span>2022</span>
+              <h3>Lizbona</h3>
+              <p>Miasto światła, wzgórza, tramwaje i tempo, które dobrze znosi długie spacery.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="trip-card" data-tags="europa city">
+          <a href="https://klosiezwiedzaja.blogspot.com/2021/12/rzym.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW02l6w_iE2i7S-TM_UvtgYKveECjS2M5ZgHkKmmZPXr4Ad6vUnro0UeweDZ3z1secXRHs4gulExuRcY78gqWBMAiVlEGa-zyy8e0cu78Th1nyY4Ue1uhowIrtg-w60yI6MEyPrRIZhFKg/s640/IMG_7125.jpg"
+              alt="Rzym"
+            />
+            <div>
+              <span>2021</span>
+              <h3>Rzym</h3>
+              <p>Klasyka na własnych zasadach: historia, jedzenie i miejsca ukryte między oczywistościami.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="trip-card" data-tags="europa">
+          <a href="https://klosiezwiedzaja.blogspot.com/2021/09/ponocne-wochy.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRGTzWgJmQujh_XPPzpmmiZwQ9DnH8ZW4JD1nd1BPcAeJyFEaDEAdTV78xo6CmmetbWLydTe_wJuw_Ava7OEoL-QHvhOALQmGhMUtrXEaTXN4yRuvHzKUfaxIwE3c_LBJJMNOt4_wCtFCW/s640/DSC09740.jpg"
+              alt="Północne Włochy"
+            />
+            <div>
+              <span>2021</span>
+              <h3>Północne Włochy</h3>
+              <p>Jeziora, miasta i trasy, w których plan dnia układa się równie ważnie jak widoki.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="trip-card featured" data-tags="usa">
+          <a href="https://klosiezwiedzaja.blogspot.com/2019/11/zachod-usa-w-trzy-tygodnie.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI0PCaBshfZ_2BhjyOBKX72UdRCXcKfKfReuT4YvnZcvIU81wJbeF6qlji9DLWjZ6LJ8M8VWhGSawTkIyea4tddI-0sejBPoCR69PTCrlPHnN3Prbfu5e-fBhWyef7LWn6A6MB6lXs3-na/s640/DSC_8843.jpg"
+              alt="Zachód USA"
+            />
+            <div>
+              <span>2019</span>
+              <h3>Zachód USA w trzy tygodnie</h3>
+              <p>Duża drogowa wycieczka przez parki, miasta i przestrzenie, które trudno zmieścić w jednym kadrze.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="trip-card" data-tags="europa">
+          <a href="https://klosiezwiedzaja.blogspot.com/2019/08/bugaria-rumunia-serbia-i-nie-tylko.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-N70GZnzZmeEZj-sGPIMgYox4hkTRSCciPMASokPyKwfhvY0uL5mxqZxYLnRwSO2UCQM3joPO_0YvDAzrVKDOMd_B8K93iqf7-9s3qF0eQDbB2s_8SoQq32nzxlpD4G4toyJZC-vVkUG2/s640/ks.jpg"
+              alt="Bułgaria, Rumunia i Serbia"
+            />
+            <div>
+              <span>2019</span>
+              <h3>Bułgaria, Rumunia, Serbia i nie tylko</h3>
+              <p>Trasa przez mniej oczywiste punkty Europy: miasta, drogi i miejsca z charakterem.</p>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section class="map-strip" id="mapa" aria-label="Mapa wycieczek">
+        <div id="travel-map" class="travel-map" aria-label="Interaktywna mapa świata z wycieczkami"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Kłosie Zwiedzają</p>
+      <a href="#top">Do góry</a>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
