@@ -49,9 +49,44 @@ if (mapElement && window.L) {
       url: "https://klosiezwiedzaja.blogspot.com/2019/08/bugaria-rumunia-serbia-i-nie-tylko.html",
     },
     {
-      title: "Bawaria & Czechy",
-      coords: [49.4, 12.1],
-      url: "https://klosiezwiedzaja.blogspot.com/2018/06/bawaria-czechy.html",
+      title: "Skalne Miasto w Adrspach",
+      coords: [50.6164, 16.1205],
+      url: "posts/bawaria-czechy.html#skalne-miasto",
+    },
+    {
+      title: "Drezno",
+      coords: [51.0504, 13.7373],
+      url: "posts/bawaria-czechy.html#drezno",
+    },
+    {
+      title: "Norymberga",
+      coords: [49.4521, 11.0767],
+      url: "posts/bawaria-czechy.html#norymberga",
+    },
+    {
+      title: "Monachium",
+      coords: [48.1351, 11.582],
+      url: "posts/bawaria-czechy.html#monachium",
+    },
+    {
+      title: "Zamek Neuschwanstein",
+      coords: [47.5576, 10.7498],
+      url: "posts/bawaria-czechy.html#neuschwanstein",
+    },
+    {
+      title: "Prien am Chiemsee",
+      coords: [47.856, 12.3469],
+      url: "posts/bawaria-czechy.html#chiemsee",
+    },
+    {
+      title: "Pałac Hluboka",
+      coords: [49.0523, 14.4343],
+      url: "posts/bawaria-czechy.html#hluboka",
+    },
+    {
+      title: "Ołomuniec",
+      coords: [49.5938, 17.2509],
+      url: "posts/bawaria-czechy.html#olomuniec",
     },
   ];
 
@@ -69,8 +104,8 @@ if (mapElement && window.L) {
   const pinIcon = L.divIcon({
     className: "map-marker",
     html: '<span class="map-pin"></span>',
-    iconAnchor: [16, 32],
-    iconSize: [32, 32],
+    iconAnchor: [9, 18],
+    iconSize: [18, 18],
   });
 
   const markers = trips.map((trip) => {
