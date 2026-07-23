@@ -18,6 +18,82 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //malta
+    {
+      title: "Valletta",
+      coords: [35.8989, 14.5146],
+      url: "posts/malta.html#valletta",
+    },
+    {
+      title: "Blue Grotto",
+      coords: [35.8184, 14.4574],
+      url: "posts/malta.html#blue-grotto",
+    },
+    {
+      title: "Għar Lapsi",
+      coords: [35.8250, 14.4433],
+      url: "posts/malta.html#ghar-lapsi",
+    },
+    {
+      title: "Mdina",
+      coords: [35.8869, 14.4025],
+      url: "posts/malta.html#mdina",
+    },
+    {
+      title: "Rabat",
+      coords: [35.8818, 14.3987],
+      url: "posts/malta.html#rabat",
+    },
+    {
+      title: "Popeye Village",
+      coords: [35.9577, 14.3420],
+      url: "posts/malta.html#popeye-village",
+    },
+    {
+      title: "Red Tower",
+      coords: [35.9898, 14.3434],
+      url: "posts/malta.html#red-tower",
+    },
+    {
+      title: "Klify Ta’ Ċenċ",
+      coords: [36.0184, 14.2618],
+      url: "posts/malta.html#klify-ta-cenc",
+    },
+    {
+      title: "Azure Window",
+      coords: [36.0471, 14.1889],
+      url: "posts/malta.html#azure-window",
+    },
+    {
+      title: "Kościół Ta' Pinu",
+      coords: [36.0578, 14.2149],
+      url: "posts/malta.html#kosciol-ta-pinu",
+    },
+    {
+      title: "Marsaxlokk",
+      coords: [35.8417, 14.5431],
+      url: "posts/malta.html#marsaxlokk",
+    },
+    {
+      title: "Basen św. Piotra",
+      coords: [35.8410, 14.5672],
+      url: "posts/malta.html#basen-sw-piotra",
+    },
+    {
+      title: "Marsaskala",
+      coords: [35.8624, 14.5677],
+      url: "posts/malta.html#marsaskala",
+    },
+    {
+      title: "Vittoriosa (Birgu)",
+      coords: [35.8895, 14.5228],
+      url: "posts/malta.html#vittoriosa-birgu",
+    },
+    {
+      title: "Senglea",
+      coords: [35.8873, 14.5168],
+      url: "posts/malta.html#senglea",
+    },
     //balkany
     {
       title: "Kopački Rit",
