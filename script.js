@@ -33,10 +33,81 @@ if (mapElement && window.L) {
       coords: [41.9028, 12.4964],
       url: "https://klosiezwiedzaja.blogspot.com/2021/12/rzym.html",
     },
+    //polnocne wlochy
     {
-      title: "Północne Włochy",
-      coords: [45.4642, 9.19],
-      url: "https://klosiezwiedzaja.blogspot.com/2021/09/ponocne-wochy.html",
+      title: "Bergamo",
+      coords: [45.6983, 9.6773],
+      url: "posts/wlochy-polnoc.html#bergamo",
+    },
+    {
+      title: "Diga del Vajont",
+      coords: [46.2669, 12.3244],
+      url: "posts/wlochy-polnoc.html#diga-del-vajont",
+    },
+    {
+      title: "Riva del Garda",
+      coords: [45.8867, 10.8413],
+      url: "posts/wlochy-polnoc.html#riva-del-garda",
+    },
+    {
+      title: "Trydent",
+      coords: [46.0748, 11.1217],
+      url: "posts/wlochy-polnoc.html#trydent",
+    },
+    {
+      title: "Lake Misurina",
+      coords: [46.5814, 12.2523],
+      url: "posts/wlochy-polnoc.html#lake-misurina",
+    },
+    {
+      title: "Sentiero del Dint",
+      coords: [46.2967, 12.3195],
+      url: "posts/wlochy-polnoc.html#sentiero-del-dint",
+    },
+    {
+      title: "Triest",
+      coords: [45.6495, 13.7768],
+      url: "posts/wlochy-polnoc.html#triest",
+    },
+    {
+      title: "Werona",
+      coords: [45.4384, 10.9916],
+      url: "posts/wlochy-polnoc.html#werona",
+    },
+    {
+      title: "Sirmione",
+      coords: [45.4924, 10.6097],
+      url: "posts/wlochy-polnoc.html#sirmione",
+    },
+    {
+      title: "Parma",
+      coords: [44.8015, 10.3279],
+      url: "posts/wlochy-polnoc.html#parma",
+    },
+    {
+      title: "Lavagna",
+      coords: [44.3096, 9.3490],
+      url: "posts/wlochy-polnoc.html#lavagna",
+    },
+    {
+      title: "Genua",
+      coords: [44.4056, 8.9463],
+      url: "posts/wlochy-polnoc.html#genua",
+    },
+    {
+      title: "Sacra di San Michele",
+      coords: [45.0964, 7.3459],
+      url: "posts/wlochy-polnoc.html#sacra-di-san-michele",
+    },
+    {
+      title: "Turyn",
+      coords: [45.0703, 7.6869],
+      url: "posts/wlochy-polnoc.html#turyn",
+    },
+    {
+      title: "Mediolan",
+      coords: [45.4642, 9.1900],
+      url: "posts/wlochy-polnoc.html#mediolan",
     },
     //zachod usa
     {
