@@ -26,7 +26,7 @@ if (mapElement && window.L) {
     {
       title: "Lizbona",
       coords: [38.7223, -9.1393],
-      url: "https://klosiezwiedzaja.blogspot.com/2022/03/lizbona.html",
+      url: "posts/lizbona.html",
     },
     {
       title: "Rzym",
