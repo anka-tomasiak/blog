@@ -43,11 +43,108 @@ if (mapElement && window.L) {
       coords: [37.1, -113.6],
       url: "https://klosiezwiedzaja.blogspot.com/2019/11/zachod-usa-w-trzy-tygodnie.html",
     },
+    //bulgaria, rumunia, serbia
     {
-      title: "Bułgaria, Rumunia, Serbia i nie tylko",
-      coords: [44.2, 24.8],
-      url: "https://klosiezwiedzaja.blogspot.com/2019/08/bugaria-rumunia-serbia-i-nie-tylko.html",
+      title: "Koszyce",
+      coords: [48.7164, 21.2611],
+      url: "posts/bulgaria-rumunia-serbia.html#koszyce",
     },
+    {
+      title: "Sighișoara",
+      coords: [46.2214, 24.7928],
+      url: "posts/bulgaria-rumunia-serbia.html#sighisoara",
+    },
+    {
+      title: "Braszów",
+      coords: [45.6579, 25.6012],
+      url: "posts/bulgaria-rumunia-serbia.html#braszow",
+    },
+    {
+      title: "Bukareszt",
+      coords: [44.4397, 26.0963],
+      url: "posts/bulgaria-rumunia-serbia.html#bukareszt",
+    },
+    {
+      title: "Skalne cerkwie w Iwanowie",
+      coords: [43.7167, 25.9667],
+      url: "posts/bulgaria-rumunia-serbia.html#skalne-cerkwie",
+    },
+    {
+      title: "Ruiny twierdzy Czerwen",
+      coords: [43.6207, 26.0176],
+      url: "posts/bulgaria-rumunia-serbia.html#czerwen",
+    },
+    {
+      title: "Kamienny las",
+      coords: [43.2283, 27.7059],
+      url: "posts/bulgaria-rumunia-serbia.html#warna",
+    },
+    {
+      title: "Warna",
+      coords: [43.2141, 27.9147],
+      url: "posts/bulgaria-rumunia-serbia.html#warna",
+    },
+    {
+      title: "Nesebyr",
+      coords: [42.6598, 27.7360],
+      url: "posts/bulgaria-rumunia-serbia.html#nesebyr-burgas",
+    },
+    {
+      title: "Burgas",
+      coords: [42.5048, 27.4626],
+      url: "posts/bulgaria-rumunia-serbia.html#burgas-burgas",
+    },
+    {
+      title: "Skansen w Etar",
+      coords: [42.8040, 25.3493],
+      url: "posts/bulgaria-rumunia-serbia.html#skansen-w-etar",
+    },
+    {
+      title: "Komunistyczny monument w Buzłudży",
+      coords: [42.7358, 25.3938],
+      url: "posts/bulgaria-rumunia-serbia.html#buzludza",
+    },
+    {
+      title: "Płowdiw",
+      coords: [42.1354, 24.7453],
+      url: "posts/bulgaria-rumunia-serbia.html#plowdiw",
+    },
+    {
+      title: "Sofia",
+      coords: [42.6977, 23.3219],
+      url: "posts/bulgaria-rumunia-serbia.html#sofia",
+    },
+    {
+      title: "Nisz",
+      coords: [43.3209, 21.8958],
+      url: "posts/bulgaria-rumunia-serbia.html#nisz",
+    },
+    {
+      title: "Belgrad",
+      coords: [44.7866, 20.4489],
+      url: "posts/bulgaria-rumunia-serbia.html#belgrad",
+    },
+    {
+      title: "Ökocentrum Tisza-Tavi",
+      coords: [47.6460, 20.6614],
+      url: "posts/bulgaria-rumunia-serbia.html#okocentrum",
+    },
+    {
+      title: "Lillafüred",
+      coords: [48.1006, 20.6254],
+      url: "posts/bulgaria-rumunia-serbia.html#lillafured",
+    },
+    {
+      title: "Jaskinia Domica",
+      coords: [48.4778, 20.4698],
+      url: "posts/bulgaria-rumunia-serbia.html#jaskinia-domica",
+    },
+    {
+      title: "Dobszyńska Jaskinia Lodowa",
+      coords: [48.8719, 20.2947],
+      url: "posts/bulgaria-rumunia-serbia.html#jaskinia-domica",
+    },
+    //bawaria i czechy
     {
       title: "Skalne Miasto w Adrspach",
       coords: [50.6164, 16.1205],
