@@ -31,7 +31,7 @@ if (mapElement && window.L) {
     {
       title: "Rzym",
       coords: [41.9028, 12.4964],
-      url: "https://klosiezwiedzaja.blogspot.com/2021/12/rzym.html",
+      url: "posts/rzym.html",
     },
     //polnocne wlochy
     {
