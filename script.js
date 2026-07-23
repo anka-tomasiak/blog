@@ -38,10 +38,191 @@ if (mapElement && window.L) {
       coords: [45.4642, 9.19],
       url: "https://klosiezwiedzaja.blogspot.com/2021/09/ponocne-wochy.html",
     },
+    //zachod usa
     {
-      title: "Zachód USA",
-      coords: [37.1, -113.6],
-      url: "https://klosiezwiedzaja.blogspot.com/2019/11/zachod-usa-w-trzy-tygodnie.html",
+      title: "San Francisco",
+      coords: [37.7749, -122.4194],
+      url: "posts/zachod-usa.html#san-francisco",
+    },
+    {
+      title: "Alcatraz",
+      coords: [37.8267, -122.4230],
+      url: "posts/zachod-usa.html#san-francisco",
+    },
+    {
+      title: "Point Arena Lighthouse",
+      coords: [38.9537, -123.7361],
+      url: "posts/zachod-usa.html#point-arena-lighthouse",
+    },
+    {
+      title: "Glass Beach",
+      coords: [39.4457, -123.8136],
+      url: "posts/zachod-usa.html#point-arena-lighthouse",
+    },
+    {
+      title: "Lassen Volcanic National Park",
+      coords: [40.4977, -121.4207],
+      url: "posts/zachod-usa.html#lassen-volcanic-park",
+    },
+    {
+      title: "Redwood National Park",
+      coords: [41.2132, -124.0046],
+      url: "posts/zachod-usa.html#lassen-volcanic-park",
+    },
+    {
+      title: "Crater Lake National Park",
+      coords: [42.9446, -122.1090],
+      url: "posts/zachod-usa.html#crater-lake-toketee-smith-rock",
+    },
+    {
+      title: "Toketee Falls",
+      coords: [43.2902, -122.4317],
+      url: "posts/zachod-usa.html#crater-lake-toketee-smith-rock",
+    },
+    {
+      title: "Smith Rock State Park",
+      coords: [44.3656, -121.1409],
+      url: "posts/zachod-usa.html#crater-lake-toketee-smith-rock",
+    },
+    {
+      title: "Trillium Lake",
+      coords: [45.2704, -121.7385],
+      url: "posts/zachod-usa.html#trillium-multnomah-portland",
+    },
+    {
+      title: "Multnomah Falls",
+      coords: [45.5762, -122.1158],
+      url: "posts/zachod-usa.html#trillium-multnomah-portland",
+    },
+    {
+      title: "Portland",
+      coords: [45.5152, -122.6784],
+      url: "posts/zachod-usa.html#trillium-multnomah-portland",
+    },
+    {
+      title: "Olympic National Park",
+      coords: [47.8021, -123.6044],
+      url: "posts/zachod-usa.html#olympic-national-park",
+    },
+    {
+      title: "Ruby Beach",
+      coords: [47.7108, -124.4158],
+      url: "posts/zachod-usa.html#olympic-national-park",
+    },
+    {
+      title: "Big Cedar Tree",
+      coords: [47.8592, -123.9342],
+      url: "posts/zachod-usa.html#olympic-national-park",
+    },
+    {
+      title: "Seattle",
+      coords: [47.6062, -122.3321],
+      url: "posts/zachod-usa.html#seattle",
+    },
+    {
+      title: "Yellowstone National Park",
+      coords: [44.4280, -110.5885],
+      url: "posts/zachod-usa.html#yellowstone-yellowstone-bear-world",
+    },
+    {
+      title: "Yellowstone Bear World",
+      coords: [43.8332, -111.7893],
+      url: "posts/zachod-usa.html#yellowstone-yellowstone-bear-world",
+    },
+    {
+      title: "Bonneville Salt Flats",
+      coords: [40.7615, -113.8961],
+      url: "posts/zachod-usa.html#salt-flat-bonneville-salt-lake-city",
+    },
+    {
+      title: "Salt Lake City",
+      coords: [40.7608, -111.8910],
+      url: "posts/zachod-usa.html#salt-flat-bonneville-salt-lake-city",
+    },
+    {
+      title: "Arches National Park",
+      coords: [38.7331, -109.5925],
+      url: "posts/zachod-usa.html#arches",
+    },
+    {
+      title: "Capitol Reef National Park",
+      coords: [38.2917, -111.2615],
+      url: "posts/zachod-usa.html#arches",
+    },
+    {
+      title: "Bryce Canyon National Park",
+      coords: [37.5930, -112.1871],
+      url: "posts/zachod-usa.html#bryce-zion",
+    },
+    {
+      title: "Zion National Park",
+      coords: [37.2982, -113.0263],
+      url: "posts/zachod-usa.html#bryce-zion",
+    },
+    {
+      title: "Zapora Glen Canyon",
+      coords: [36.9372, -111.4832],
+      url: "posts/zachod-usa.html#canyon",
+    },
+    {
+      title: "Horseshoe Bend",
+      coords: [36.8796, -111.5104],
+      url: "posts/zachod-usa.html#canyon",
+    },
+    {
+      title: "Grand Canyon National Park",
+      coords: [36.1069, -112.1129],
+      url: "posts/zachod-usa.html#canyon",
+    },
+    {
+      title: "Zapora Hoovera",
+      coords: [36.0156, -114.7378],
+      url: "posts/zachod-usa.html#las-vegas",
+    },
+    {
+      title: "Las Vegas",
+      coords: [36.1699, -115.1398],
+      url: "posts/zachod-usa.html#las-vegas",
+    },
+    {
+      title: "Route 66",
+      coords: [35.1983, -111.6513],
+      url: "posts/zachod-usa.html#las-vegas",
+    },
+    {
+      title: "Joshua Tree National Park",
+      coords: [33.8734, -115.9010],
+      url: "posts/zachod-usa.html#joshua-tree",
+    },
+    {
+      title: "San Diego",
+      coords: [32.7157, -117.1611],
+      url: "posts/zachod-usa.html#joshua-tree",
+    },
+    {
+      title: "Los Angeles",
+      coords: [34.0522, -118.2437],
+      url: "posts/zachod-usa.html#los-angeles",
+    },
+    {
+      title: "Universal Studios Hollywood",
+      coords: [34.1381, -118.3534],
+      url: "posts/zachod-usa.html#los-angeles",
+    },
+    {
+      title: "Sequoia National Park",
+      coords: [36.4864, -118.5658],
+      url: "posts/zachod-usa.html#yosemite-sequoia",
+    },
+    {
+      title: "Yosemite National Park",
+      coords: [37.8651, -119.5383],
+      url: "posts/zachod-usa.html#yosemite-sequoia",
+    },
+    {
+      title: "Googleplex",
+      coords: [37.4220, -122.0841],
+      url: "posts/zachod-usa.html#yosemite-sequoia",
     },
     //bulgaria, rumunia, serbia
     {
