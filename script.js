@@ -18,10 +18,151 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //balkany
     {
-      title: "Bałkany",
-      coords: [42.7, 20.8],
-      url: "https://klosiezwiedzaja.blogspot.com/2022/08/bakany-trip.html",
+      title: "Kopački Rit",
+      coords: [45.6089, 18.8583],
+      url: "posts/balkany.html#kopacki-rit",
+    },
+    {
+      title: "Sarajewo",
+      coords: [43.8563, 18.4131],
+      url: "posts/balkany.html#kopacki-rit",
+    },
+    {
+      title: "Tjentište Spomenik",
+      coords: [43.6029, 18.7068],
+      url: "posts/balkany.html#kopacki-rit",
+    },
+    {
+      title: "Dragoš Sedlo i wodospad",
+      coords: [43.0928, 18.9646],
+      url: "posts/balkany.html#kopacki-rit",
+    },
+    {
+      title: "Monaster Ostrog",
+      coords: [42.6756, 19.0298],
+      url: "posts/balkany.html#ostrog-podgorica-mesi-rozafa",
+    },
+    {
+      title: "Podgorica",
+      coords: [42.4304, 19.2594],
+      url: "posts/balkany.html#ostrog-podgorica-mesi-rozafa",
+    },
+    {
+      title: "Most Mesi",
+      coords: [42.1062, 19.5357],
+      url: "posts/balkany.html#ostrog-podgorica-mesi-rozafa",
+    },
+    {
+      title: "Zamek Rozafy",
+      coords: [42.0395, 19.4908],
+      url: "posts/balkany.html#ostrog-podgorica-mesi-rozafa",
+    },
+    {
+      title: "Bigorski Monaster św. Jana Chrzciciela",
+      coords: [41.6948, 20.6075],
+      url: "posts/balkany.html#bigorski-mavrovo-skopje",
+    },
+    {
+      title: "Old Mavrovo Church",
+      coords: [41.6546, 20.7343],
+      url: "posts/balkany.html#bigorski-mavrovo-skopje",
+    },
+    {
+      title: "Skopje",
+      coords: [41.9981, 21.4254],
+      url: "posts/balkany.html#bigorski-mavrovo-skopje",
+    },
+    {
+      title: "Saloniki",
+      coords: [40.6401, 22.9444],
+      url: "posts/balkany.html#saloniki-meteory",
+    },
+    {
+      title: "Meteory",
+      coords: [39.7217, 21.6300],
+      url: "posts/balkany.html#saloniki-meteory",
+    },
+    {
+      title: "Ateny",
+      coords: [37.9838, 23.7275],
+      url: "posts/balkany.html#ateny-epidauros-nauplion",
+    },
+    {
+      title: "Teatr w Epidauros i sanktuarium Asklepiosa",
+      coords: [37.5961, 23.0753],
+      url: "posts/balkany.html#ateny-epidauros-nauplion",
+    },
+    {
+      title: "Nauplion",
+      coords: [37.5673, 22.8016],
+      url: "posts/balkany.html#ateny-epidauros-nauplion",
+    },
+    {
+      title: "Mykeny",
+      coords: [37.7308, 22.7546],
+      url: "posts/balkany.html#mykeny-delfy",
+    },
+    {
+      title: "Delfy",
+      coords: [38.4824, 22.5010],
+      url: "posts/balkany.html#mykeny-delfy",
+    },
+    {
+      title: "Syri i Kaltër",
+      coords: [39.9154, 20.1887],
+      url: "posts/balkany.html#syri-kalter-berat-tirana",
+    },
+    {
+      title: "Berat",
+      coords: [40.7058, 19.9522],
+      url: "posts/balkany.html#syri-kalter-berat-tirana",
+    },
+    {
+      title: "Tirana",
+      coords: [41.3275, 19.8187],
+      url: "posts/balkany.html#syri-kalter-berat-tirana",
+    },
+    {
+      title: "Wyspa Sveti Stefan",
+      coords: [42.2562, 18.8969],
+      url: "posts/balkany.html#kotor-herceg-novi-dubrovnik",
+    },
+    {
+      title: "Kotor",
+      coords: [42.4247, 18.7712],
+      url: "posts/balkany.html#kotor-herceg-novi-dubrovnik",
+    },
+    {
+      title: "Catholic Monastery of Saint George",
+      coords: [42.4864, 18.6990],
+      url: "posts/balkany.html#kotor-herceg-novi-dubrovnik",
+    },
+    {
+      title: "Herceg Novi",
+      coords: [42.4531, 18.5375],
+      url: "posts/balkany.html#kotor-herceg-novi-dubrovnik",
+    },
+    {
+      title: "Dubrownik",
+      coords: [42.6507, 18.0944],
+      url: "posts/balkany.html#kotor-herceg-novi-dubrovnik",
+    },
+    {
+      title: "Park Narodowy Krka",
+      coords: [43.8045, 15.9733],
+      url: "posts/balkany.html#krka-plitwickie-zagreb",
+    },
+    {
+      title: "Jeziora Plitwickie",
+      coords: [44.8806, 15.6160],
+      url: "posts/balkany.html#krka-plitwickie-zagreb",
+    },
+    {
+      title: "Zagrzeb",
+      coords: [45.8150, 15.9819],
+      url: "posts/balkany.html#krka-plitwickie-zagreb",
     },
     {
       title: "Lizbona",
