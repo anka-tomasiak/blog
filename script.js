@@ -37,6 +37,11 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    {
+      title: "Barcelona",
+      coords: [41.3851, 2.1734],
+      url: "posts/barcelona.html",
+    },
     //majowka 2023
     {
       title: "Jasna Góra",
