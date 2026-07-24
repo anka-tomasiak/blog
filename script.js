@@ -11,7 +11,10 @@ function applyFeaturedLayout() {
   visibleCards.forEach((card) => card.classList.remove("featured"));
 
   visibleCards.forEach((card, index) => {
-    const isFeaturedCard = index >= 3 && (index - 3) % 6 === 0;
+    const row = Math.floor(index / 3);
+    const column = index % 3;
+    const isFeaturedCard = (row % 4 === 1 && column === 2) || (row % 4 === 3 && column === 0);
+
     card.classList.toggle("featured", isFeaturedCard);
   });
 }
