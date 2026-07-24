@@ -1,6 +1,21 @@
 const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".trip-card");
 
+function getVisibleCards() {
+  return Array.from(cards).filter((card) => !card.classList.contains("is-hidden"));
+}
+
+function applyFeaturedLayout() {
+  const visibleCards = getVisibleCards();
+
+  visibleCards.forEach((card) => card.classList.remove("featured"));
+
+  visibleCards.forEach((card, index) => {
+    const isFeaturedCard = index >= 3 && (index - 3) % 6 === 0;
+    card.classList.toggle("featured", isFeaturedCard);
+  });
+}
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const selected = button.dataset.filter;
@@ -11,13 +26,53 @@ filters.forEach((button) => {
       const tags = card.dataset.tags.split(" ");
       card.classList.toggle("is-hidden", selected !== "all" && !tags.includes(selected));
     });
+
+    applyFeaturedLayout();
   });
 });
+
+applyFeaturedLayout();
 
 const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //majowka 2023
+    {
+      title: "Jasna Góra",
+      coords: [50.8118, 19.1203],
+      url: "posts/majowka23.html#poznan",
+    },
+    {
+      title: "Poznań",
+      coords: [52.4064, 16.9252],
+      url: "posts/majowka23.html#poznan",
+    },
+    {
+      title: "Parowozownia Wolsztyn",
+      coords: [52.1124, 16.1125],
+      url: "posts/majowka23.html#poznan",
+    },
+    {
+      title: "Zielona Góra",
+      coords: [51.9356, 15.5062],
+      url: "posts/majowka23.html#zielona-gora",
+    },
+    {
+      title: "Zamek Czocha",
+      coords: [51.0302, 15.3082],
+      url: "posts/majowka23.html#zielona-gora",
+    },
+    {
+      title: "Jelenia Góra",
+      coords: [50.9044, 15.7194],
+      url: "posts/majowka23.html#zielona-gora",
+    },
+    {
+      title: "Wrocław",
+      coords: [51.1079, 17.0385],
+      url: "posts/majowka23.html#wroclaw",
+    },
     //malta
     {
       title: "Valletta",
