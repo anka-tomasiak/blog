@@ -8,12 +8,11 @@ function getVisibleCards() {
 function applyFeaturedLayout() {
   const visibleCards = getVisibleCards();
 
-  visibleCards.forEach((card) => card.classList.remove("featured"));
-
   visibleCards.forEach((card, index) => {
-    const row = Math.floor(index / 3);
-    const column = index % 3;
-    const isFeaturedCard = (row % 4 === 1 && column === 2) || (row % 4 === 3 && column === 0);
+    const positionInCycle = index % 12;
+    const isFeaturedCard =
+      positionInCycle === 3 ||
+      positionInCycle === 9;
 
     card.classList.toggle("featured", isFeaturedCard);
   });
@@ -40,6 +39,97 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //mazury
+    {
+      title: "Suwałki",
+      coords: [54.1111, 22.9304],
+      url: "posts/mazury.html#suwalki",
+    },
+    {
+      title: "Mosty w Stańczykach",
+      coords: [54.2888, 22.6400],
+      url: "posts/mazury.html#suwalki",
+    },
+    {
+      title: "Jezioro Hańcza",
+      coords: [54.2584, 22.8157],
+      url: "posts/mazury.html#suwalki",
+    },
+    {
+      title: "Wigierska Kolejka Wąskotorowa",
+      coords: [53.5915, 20.8035],
+      url: "posts/mazury.html#kolejka",
+    },
+    {
+      title: "Ełk",
+      coords: [53.8282, 22.3647],
+      url: "posts/mazury.html#kolejka",
+    },
+    {
+      title: "Augustów",
+      coords: [53.8446, 22.9798],
+      url: "posts/mazury.html#kolejka",
+    },
+    {
+      title: "Troki",
+      coords: [54.6370, 24.9342],
+      url: "posts/mazury.html#litwa",
+    },
+    {
+      title: "Wilno",
+      coords: [54.6872, 25.2797],
+      url: "posts/mazury.html#litwa",
+    },
+    {
+      title: "Śluza Kudrynki",
+      coords: [53.9227, 23.5715],
+      url: "posts/mazury.html#tatarzy",
+    },
+    {
+      title: "Meczet w Bohonikach",
+      coords: [53.5416, 23.5326],
+      url: "posts/mazury.html#tatarzy",
+    },
+    {
+      title: "Meczet w Kruszynianach",
+      coords: [53.4377, 23.6515],
+      url: "posts/mazury.html#tatarzy",
+    },
+    {
+      title: "Zagroda Pokazowa Żubrów w Kopnej Górze",
+      coords: [53.2198, 23.4085],
+      url: "posts/mazury.html#tatarzy",
+    },
+    {
+      title: "Biebrzański Park Narodowy",
+      coords: [53.4688, 22.6428],
+      url: "posts/mazury.html#grajewo",
+    },
+    {
+      title: "Grajewo",
+      coords: [53.6473, 22.4554],
+      url: "posts/mazury.html#grajewo",
+    },
+    {
+      title: "Twierdza Boyen",
+      coords: [54.0376, 21.7595],
+      url: "posts/mazury.html#boyen",
+    },
+    {
+      title: "Wilczy Szaniec",
+      coords: [54.0818, 21.4952],
+      url: "posts/mazury.html#boyen",
+    },
+    {
+      title: "Spływ kajakowy Krutynia - Ukta",
+      coords: [53.7014, 21.4807],
+      url: "posts/mazury.html#olsztyn",
+    },
+    {
+      title: "Olsztyn",
+      coords: [53.7784, 20.4801],
+      url: "posts/mazury.html#olsztyn",
+    },
     {
       title: "Barcelona",
       coords: [41.3851, 2.1734],
