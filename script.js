@@ -39,6 +39,92 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //cypr
+    {
+      title: "Larnaka Salt Lake",
+      coords: [34.8866, 33.6207],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "Hala Sultan Tekke",
+      coords: [34.8843, 33.6167],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "Larnaka",
+      coords: [34.9167, 33.6292],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "St Mamas Ruins",
+      coords: [35.0348, 33.2706],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "Nikozja",
+      coords: [35.1856, 33.3823],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "Fikardu",
+      coords: [34.9817, 33.1778],
+      url: "posts/cypr.html#pierwszy",
+    },
+    {
+      title: "Kościół Saint Nicholas of the Roof",
+      coords: [34.9636, 32.8297],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Galata",
+      coords: [34.9642, 32.8278],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Klasztor Saint John Lampadistes",
+      coords: [34.9919, 32.7403],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Klasztor Kykkos",
+      coords: [34.9806, 32.7411],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Wodospad Chantara",
+      coords: [34.9328, 32.8576],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Wodospad Kalidonia",
+      coords: [34.9184, 32.8668],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Obserwatorium Troodos",
+      coords: [34.9188, 32.8898],
+      url: "posts/cypr.html#drugi",
+    },
+    {
+      title: "Skała Afrodyty",
+      coords: [34.6656, 32.6275],
+      url: "posts/cypr.html#trzeci",
+    },
+    {
+      title: "Szlak Afrodyty (Akamas)",
+      coords: [35.0552, 32.3415],
+      url: "posts/cypr.html#trzeci",
+    },
+    {
+      title: "Wąwóz Avakas",
+      coords: [34.9444, 32.3462],
+      url: "posts/cypr.html#trzeci",
+    },
+    {
+      title: "Pafos",
+      coords: [34.7720, 32.4297],
+      url: "posts/cypr.html#trzeci",
+    },
     //mazury
     {
       title: "Suwałki",
