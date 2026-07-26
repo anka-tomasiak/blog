@@ -39,6 +39,97 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //wlochy poludnie
+    {
+      title: "Alberobello",
+      coords: [40.7864, 17.2405],
+      url: "posts/wlochy-poludnie.html#alberobello",
+    },
+    {
+      title: "Monopoli",
+      coords: [40.9525, 17.3021],
+      url: "posts/wlochy-poludnie.html#alberobello",
+    },
+    {
+      title: "Polignano a Mare",
+      coords: [40.9952, 17.2184],
+      url: "posts/wlochy-poludnie.html#alberobello",
+    },
+    {
+      title: "Grotte di Castellana",
+      coords: [40.8735, 17.1655],
+      url: "posts/wlochy-poludnie.html#alberobello",
+    },
+    {
+      title: "Brindisi",
+      coords: [40.6327, 17.9418],
+      url: "posts/wlochy-poludnie.html#matera",
+    },
+    {
+      title: "Lecce",
+      coords: [40.3515, 18.1750],
+      url: "posts/wlochy-poludnie.html#matera",
+    },
+    {
+      title: "Cave of Poetry",
+      coords: [40.2744, 18.4305],
+      url: "posts/wlochy-poludnie.html#matera",
+    },
+    {
+      title: "Matera",
+      coords: [40.6663, 16.6043],
+      url: "posts/wlochy-poludnie.html#matera",
+    },
+    {
+      title: "Metaponto",
+      coords: [40.3706, 16.8155],
+      url: "posts/wlochy-poludnie.html#matera",
+    },
+    {
+      title: "Craco",
+      coords: [40.3902, 16.4367],
+      url: "posts/wlochy-poludnie.html#craco",
+    },
+    {
+      title: "Crotone",
+      coords: [39.0808, 17.1271],
+      url: "posts/wlochy-poludnie.html#craco",
+    },
+    {
+      title: "Le Castella",
+      coords: [38.9105, 17.0348],
+      url: "posts/wlochy-poludnie.html#craco",
+    },
+    {
+      title: "Scilla",
+      coords: [38.2536, 15.7173],
+      url: "posts/wlochy-poludnie.html#craco",
+    },
+    {
+      title: "Tropea",
+      coords: [38.6762, 15.8986],
+      url: "posts/wlochy-poludnie.html#craco",
+    },
+    {
+      title: "Certosa di Padula",
+      coords: [40.3445, 15.6550],
+      url: "posts/wlochy-poludnie.html#neapol",
+    },
+    {
+      title: "Neapol",
+      coords: [40.8518, 14.2681],
+      url: "posts/wlochy-poludnie.html#neapol",
+    },
+    {
+      title: "Pompeje",
+      coords: [40.7460, 14.4989],
+      url: "posts/wlochy-poludnie.html#pompeje",
+    },
+    {
+      title: "Vieste",
+      coords: [41.8825, 16.1750],
+      url: "posts/wlochy-poludnie.html#pompeje",
+    },
     //cypr
     {
       title: "Larnaka Salt Lake",
