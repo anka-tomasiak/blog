@@ -41,7 +41,7 @@ if (mapElement && window.L) {
   const trips = [
     {
       title: "Sewilla",
-      coords: [37.3886, 17.2405],
+      coords: [37.3828, -5.9732],
       url: "posts/sewilla.html",
     },
     //wlochy poludnie
