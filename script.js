@@ -39,6 +39,11 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    {
+      title: "Sewilla",
+      coords: [37.3886, 17.2405],
+      url: "posts/sewilla.html",
+    },
     //wlochy poludnie
     {
       title: "Alberobello",
