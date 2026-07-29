@@ -39,6 +39,37 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //czarnobyl
+    {
+      title: "Czarnobyl",
+      coords: [51.2762, 30.2219],
+      url: "posts/czarnobyl.html#czarnobyl",
+    },
+    {
+      title: "Czarnobyl-2 (Radar Duga)",
+      coords: [51.3048, 30.0655],
+      url: "posts/czarnobyl.html#czarnobyl",
+    },
+    {
+      title: "Prypeć",
+      coords: [51.4046, 30.0567],
+      url: "posts/czarnobyl.html#prypec",
+    },
+    {
+      title: "Sławutycz",
+      coords: [51.5228, 30.7564],
+      url: "posts/czarnobyl.html",
+    },
+    {
+      title: "Elektrownia Jądrowa w Czarnobylu",
+      coords: [51.3890, 30.0993],
+      url: "posts/czarnobyl.html#elektrownia",
+    },
+    {
+      title: "Kijów",
+      coords: [50.4501, 30.5234],
+      url: "posts/czarnobyl.html#kijow",
+    },
     {
       title: "Sewilla",
       coords: [37.3828, -5.9732],
