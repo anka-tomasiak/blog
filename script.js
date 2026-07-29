@@ -48,7 +48,7 @@ if (mapElement && window.L) {
     {
       title: "Grudziądz",
       coords: [53.4841, 18.7537],
-      url: "posts/gdansk.html#arkadia",
+      url: "posts/gdansk.html#malbork",
     },
     {
       title: "Gdańsk",
