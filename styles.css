@@ -493,10 +493,11 @@ h3 {
 .post-content ul,
 .post-content ol,
 .post-content dl {
-  max-width: 720px;
+  max-width: 980px;
 }
 
 .post-section {
+  margin-inline: auto;
   margin-bottom: clamp(34px, 5vw, 52px);
 }
 
@@ -511,7 +512,7 @@ h3 {
 
 .post-content h2 {
   font-size: clamp(1.55rem, 3vw, 2.35rem);
-  max-width: 780px;
+  max-width: 980px;
 }
 
 .post-content h2:first-child {
@@ -535,7 +536,7 @@ h3 {
 .post-content img {
   border: 1px solid var(--line);
   height: auto;
-  margin: 22px 0 34px;
+  margin: 22px auto 34px;
   max-width: 100%;
 }
 
@@ -546,19 +547,19 @@ h3 {
   height: auto;
   margin: 20px 0 34px;
   max-width: 100%;
-  width: min(100%, 720px);
+  width: min(100%, 980px);
 }
 
 .post-content figure {
-  margin: 24px 0 0;
-  max-width: 720px;
+  margin: 24px auto 0;
+  max-width: 860px;
 }
 
 .day-plan {
   display: grid;
   gap: 18px;
   margin: 26px 0;
-  max-width: 720px;
+  max-width: 980px;
 }
 
 .day-plan section {
