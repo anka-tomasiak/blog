@@ -1,321 +1,267 @@
 <!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Kłosie Zwiedzają - minimalistyczny blog podróżniczy o trasach, miastach i miejscach, do których chce się wracać."
-    />
-    <title>Kłosie Zwiedzają</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Kłosie Zwiedzają - strona główna">
-        <img class="brand-logo" src="assets/logo-klosie.png" alt="Kłosie" />
-      </a>
-      <nav class="top-nav" aria-label="Główne">
-        <a href="#wyprawy">Wycieczki</a>
-        <a href="#mapa">Mapa</a>
-        <a href="#o-blogu">O blogu</a>
-      </nav>
-    </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media">
-          <img
-            src="assets/hero-malta.jpg"
-            alt="Panorama miasta z kopułą kościoła i dużymi chmurami nad Maltą"
-          />
-        </div>
-        <div class="hero-content">
-          <p class="eyebrow">Blog podróżniczy</p>
-          <h1 id="hero-title">Kłosie Zwiedzają</h1>
-          <p>
-            Relacje, trasy i praktyczne notatki z miejsc, które najlepiej poznaje
-            się przez widoki, jedzenie, postoje, zachwyty i spotkanych ludzi.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#wyprawy">Nasze wycieczki</a>
-            <a class="button ghost" href="#mapa">Mapa</a>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Kłosie Zwiedzają - minimalistyczny blog podróżniczy o trasach, miastach i miejscach, do których chce się wracać." />
+  <title>Kłosie Zwiedzają</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <section class="intro" id="o-blogu" aria-labelledby="intro-title">
-        <div>
-          <p class="eyebrow">Miejsce dla naszych historii</p>
-          <h2 id="intro-title">Każda podróż dokłada kolejny rozdział do naszej kolekcji wspomnień</h2>
-          <p>
-          Lubimy planować, odkrywać i wyciskać z każdej podróży maksimum, 
-          ale wiemy też, że najpiękniejsze chwile często czekają tam, gdzie się ich nie spodziewamy. Szukamy lokalnych smaków, niezwykłych widoków i ludzi, którzy sprawiają, że dane miejsce zostaje z nami na długo.
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Kłosie Zwiedzają - strona główna">
+      <img class="brand-logo" src="assets/logo-klosie.png" alt="Kłosie" />
+    </a>
+    <nav class="top-nav" aria-label="Główne">
+      <a href="#wyprawy">Wycieczki</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#o-blogu">O blogu</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="assets/hero-malta.jpg" alt="Panorama miasta z kopułą kościoła i dużymi chmurami nad Maltą" />
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Blog podróżniczy</p>
+        <h1 id="hero-title">Kłosie Zwiedzają</h1>
+        <p>
+          Relacje, trasy i praktyczne notatki z miejsc, które najlepiej poznaje
+          się przez widoki, jedzenie, postoje, zachwyty i spotkanych ludzi.
         </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#wyprawy">Nasze wycieczki</a>
+          <a class="button ghost" href="#mapa">Mapa</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="toolbar" aria-label="Filtrowanie wypraw">
-        <div>
-          <p class="eyebrow">Wpisy</p>
-          <h2 id="wyprawy">Wycieczki</h2>
-        </div>
-        <div class="filters" role="list" aria-label="Kategorie">
-          <button class="filter is-active" type="button" data-filter="all">Wszystkie</button>
-          <button class="filter" type="button" data-filter="europa">Europa</button>
-          <button class="filter" type="button" data-filter="usa">USA</button>
-          <button class="filter" type="button" data-filter="city">City Break</button>
-          <button class="filter" type="button" data-filter="polska">Polska</button>
-        </div>
-      </section>
+    <section class="intro" id="o-blogu" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">Miejsce dla naszych historii</p>
+        <h2 id="intro-title">Każda podróż dokłada kolejny rozdział do naszej kolekcji wspomnień</h2>
+        <p>
+          Lubimy planować, odkrywać i wyciskać z każdej podróży maksimum,
+          ale wiemy też, że najpiękniejsze chwile często czekają tam, gdzie się ich nie spodziewamy. Szukamy lokalnych
+          smaków, niezwykłych widoków i ludzi, którzy sprawiają, że dane miejsce zostaje z nami na długo.
+        </p>
+      </div>
+    </section>
 
-      <section class="trip-grid" aria-label="Lista wypraw">
+    <section class="toolbar" aria-label="Filtrowanie wypraw">
+      <div>
+        <p class="eyebrow">Wpisy</p>
+        <h2 id="wyprawy">Wycieczki</h2>
+      </div>
+      <div class="filters" role="list" aria-label="Kategorie">
+        <button class="filter is-active" type="button" data-filter="all">Wszystkie</button>
+        <button class="filter" type="button" data-filter="europa">Europa</button>
+        <button class="filter" type="button" data-filter="usa">USA</button>
+        <button class="filter" type="button" data-filter="city">City Break</button>
+        <button class="filter" type="button" data-filter="polska">Polska</button>
+      </div>
+    </section>
 
-        <article class="trip-card" data-tags="polska europa">
-          <a href="posts/mazury.html">
-            <img
-              src="assets/posts/mazury/troki.jpg"
-              alt="Troki, Litwa"
-            />
-            <div>
-              <span>2026</span>
-              <h3>Podlasie, Litwa, Warmia i Mazury</h3>
-              <p>Początek wakacji w pięknych zakątkach Polski i nie tylko.</p>
-            </div>
-          </a>
-        </article>
+    <section class="trip-grid" aria-label="Lista wypraw">
 
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/cypr.html">
-            <img
-              src="assets/posts/cypr/cypr.jpg"
-              alt="Cypr"
-            />
-            <div>
-              <span>2026</span>
-              <h3>Cypr</h3>
-              <p>Od Larnaki i Nikozji po Troodos, Akamas i Pafos.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/wlochy-poludnie.html">
-            <img
-              src="assets/posts/wlochy-poludnie/albero.jpg"
-              alt="Cypr"
-            />
-            <div>
-              <span>2025</span>
-              <h3>Południe Włoch</h3>
-              <p>Road trip przez Apulię, Kampanię i Basilicatę.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa city">
-          <a href="posts/sewilla.html">
-            <img
-              src="assets/posts/sewilla/sewilla.jpg"
-              alt="Sewilla"
-            />
-            <div>
-              <span>2025</span>
-              <h3>Sewilla</h3>
-              <p>Weekend w stolicy Andaluzji.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa city">
-          <a href="posts/barcelona.html">
-            <img
-              src="assets/posts/barcelona/barcelona.jpg"
-              alt="Barcelona"
-            />
-            <div>
-              <span>2024</span>
-              <h3>Barcelona</h3>
-              <p>Intensywne zwiedzanie pełne kolorów i architektury.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa polska">
-          <a href="posts/majowka23.html">
-            <img
-              src="assets/posts/majowka23/majowka23.jpg"
-              alt="Majowka 2023"
-            />
-            <div>
-              <span>2023</span>
-              <h3>Majówka w Polsce</h3>
-              <p>Poznań, Zielona Góra, Zamek Czocha, Jelenia Góra i Wrocław.</p>
-            </div>
-          </a>
-        </article>
-        
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/malta.html">
-            <img
-              src="assets/hero-malta.jpg"
-              alt="Malta"
-            />
-            <div>
-              <span>2023</span>
-              <h3>Malta</h3>
-              <p>Od średniowiecznych miast po klify, naturalne zatoki i widoki, które trudno zapomnieć.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/balkany.html">
-            <img
-              src="assets/posts/balkany/balkany.jpg"
-              alt="Krajobraz z wycieczki na Bałkany"
-            />
-            <div>
-              <span>2022</span>
-              <h3>Bałkany</h3>
-              <p>Chorwacja, Bośnia i Hercegowina, Czarnogóra, Albania, Grecja i Macedonia Północna.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa city">
-          <a href="posts/lizbona.html">
-            <img
-              src="assets/posts/lizbona/lizbona.jpg"
-              alt="Lizbona"
-            />
-            <div>
-              <span>2022</span>
-              <h3>Lizbona</h3>
-              <p>Miasto świateł, wzgórz, tramwajów i długich spacerów.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa city">
-          <a href="posts/rzym.html">
-            <img
-              src="assets/posts/rzym/rzym.jpeg"
-              alt="Rzym"
-            />
-            <div>
-              <span>2021</span>
-              <h3>Rzym</h3>
-              <p>Klasyka na własnych zasadach: historia, jedzenie i ukryte skarby.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/wlochy-polnoc.html">
-            <img
-              src="assets/posts/wlochy-polnoc/wlochy-polnoc.jpg"
-              alt="Północne Włochy"
-            />
-            <div>
-              <span>2021</span>
-              <h3>Północne Włochy</h3>
-              <p>Jeziora, miasta, trasy i widoki, od których ciężko oderwać wzrok.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="usa">
-          <a href="posts/zachod-usa.html">
-            <img
-              src="assets/posts/zachod-usa/usa.jpg"
-              alt="Zachód USA"
-            />
-            <div>
-              <span>2019</span>
-              <h3>Zachód USA w trzy tygodnie</h3>
-              <p>Wycieczka przez parki, miasta i przestrzenie, które trudno zmieścić w jednym kadrze.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/bulgaria-rumunia-serbia.html">
-            <img
-              src="assets/posts/bulgaria-rumunia-serbia/bulgaria.jpeg"
-              alt="Bułgaria, Rumunia i Serbia"
-            />
-            <div>
-              <span>2019</span>
-              <h3>Bułgaria, Rumunia, Serbia i Węgry</h3>
-              <p>Bałkański roadtrip – Bułgaria, Rumunia, Serbia i Węgry.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="trip-card" data-tags="europa">
-          <a href="posts/bawaria-czechy.html">
-            <img
-              src="assets/posts/bawaria-czechy/skalne-miasto.jpg"
-              alt="Bawaria i Czechy"
-            />
-            <div>
-              <span>2018</span>
-              <h3>Bawaria & Czechy</h3>
-              <p>Pięć dni między czeskimi miastami i bawarskimi zamkami.</p>
-            </div>
-          </a>
-        </article>
-      </section>
+      <article class="trip-card" data-tags="polska europa">
+        <a href="posts/mazury.html">
+          <img src="assets/posts/mazury/troki.jpg" alt="Troki, Litwa" />
+          <div>
+            <span>2026</span>
+            <h3>Podlasie, Litwa, Warmia i Mazury</h3>
+            <p>Początek wakacji w pięknych zakątkach Polski i nie tylko.</p>
+          </div>
+        </a>
+      </article>
 
       <article class="trip-card" data-tags="europa">
-          <a href="posts/czarnobyl.html">
-            <img
-              src="assets/posts/czarnobyl/czarnobyl.jpeg"
-              alt="Czarnobyl"
-            />
-            <div>
-              <span>2016</span>
-              <h3>Czarnobyl i Kijów</h3>
-              <p>Strefa wykluczenia wokół Czarnobylskiej Elektrowni Atomowej i zabytki Kijowa.</p>
-            </div>
-          </a>
-        </article>
-      </section>
+        <a href="posts/cypr.html">
+          <img src="assets/posts/cypr/cypr.jpg" alt="Cypr" />
+          <div>
+            <span>2026</span>
+            <h3>Cypr</h3>
+            <p>Od Larnaki i Nikozji po Troodos, Akamas i Pafos.</p>
+          </div>
+        </a>
+      </article>
 
-      <!--wypad nad morze, lublin trip, sztokholm, bratyslawa, budapeszt, balaton, zamosc i okolice-->
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/wlochy-poludnie.html">
+          <img src="assets/posts/wlochy-poludnie/albero.jpg" alt="Cypr" />
+          <div>
+            <span>2025</span>
+            <h3>Południe Włoch</h3>
+            <p>Road trip przez Apulię, Kampanię i Basilicatę.</p>
+          </div>
+        </a>
+      </article>
 
-      <section class="map-strip" id="mapa" aria-label="Mapa wycieczek">
-        <div>
-          <p class="eyebrow">Tu byliśmy</p>
-          <h2 id="wyprawy">Mapa</h2>
-        </div>
-        <div id="travel-map" class="travel-map" aria-label="Interaktywna mapa świata z wycieczkami"></div>
-      </section>
-    </main>
+      <article class="trip-card" data-tags="europa city">
+        <a href="posts/sewilla.html">
+          <img src="assets/posts/sewilla/sewilla.jpg" alt="Sewilla" />
+          <div>
+            <span>2025</span>
+            <h3>Sewilla</h3>
+            <p>Weekend w stolicy Andaluzji.</p>
+          </div>
+        </a>
+      </article>
 
-    <footer class="site-footer">
-      <p>Kłosie Zwiedzają</p>
-      <a href="#top">Do góry</a>
-    </footer>
+      <article class="trip-card" data-tags="europa city">
+        <a href="posts/barcelona.html">
+          <img src="assets/posts/barcelona/barcelona.jpg" alt="Barcelona" />
+          <div>
+            <span>2024</span>
+            <h3>Barcelona</h3>
+            <p>Intensywne zwiedzanie pełne kolorów i architektury.</p>
+          </div>
+        </a>
+      </article>
 
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script src="script.js"></script>
-  </body>
+      <article class="trip-card" data-tags="europa polska">
+        <a href="posts/majowka23.html">
+          <img src="assets/posts/majowka23/majowka23.jpg" alt="Majowka 2023" />
+          <div>
+            <span>2023</span>
+            <h3>Majówka w Polsce</h3>
+            <p>Poznań, Zielona Góra, Zamek Czocha, Jelenia Góra i Wrocław.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/malta.html">
+          <img src="assets/hero-malta.jpg" alt="Malta" />
+          <div>
+            <span>2023</span>
+            <h3>Malta</h3>
+            <p>Od średniowiecznych miast po klify, naturalne zatoki i widoki, które trudno zapomnieć.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/balkany.html">
+          <img src="assets/posts/balkany/balkany.jpg" alt="Krajobraz z wycieczki na Bałkany" />
+          <div>
+            <span>2022</span>
+            <h3>Bałkany</h3>
+            <p>Chorwacja, Bośnia i Hercegowina, Czarnogóra, Albania, Grecja i Macedonia Północna.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa city">
+        <a href="posts/lizbona.html">
+          <img src="assets/posts/lizbona/lizbona.jpg" alt="Lizbona" />
+          <div>
+            <span>2022</span>
+            <h3>Lizbona</h3>
+            <p>Miasto świateł, wzgórz, tramwajów i długich spacerów.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa city">
+        <a href="posts/rzym.html">
+          <img src="assets/posts/rzym/rzym.jpeg" alt="Rzym" />
+          <div>
+            <span>2021</span>
+            <h3>Rzym</h3>
+            <p>Klasyka na własnych zasadach: historia, jedzenie i ukryte skarby.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/wlochy-polnoc.html">
+          <img src="assets/posts/wlochy-polnoc/wlochy-polnoc.jpg" alt="Północne Włochy" />
+          <div>
+            <span>2021</span>
+            <h3>Północne Włochy</h3>
+            <p>Jeziora, miasta, trasy i widoki, od których ciężko oderwać wzrok.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="usa">
+        <a href="posts/zachod-usa.html">
+          <img src="assets/posts/zachod-usa/usa.jpg" alt="Zachód USA" />
+          <div>
+            <span>2019</span>
+            <h3>Zachód USA w trzy tygodnie</h3>
+            <p>Wycieczka przez parki, miasta i przestrzenie, które trudno zmieścić w jednym kadrze.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/bulgaria-rumunia-serbia.html">
+          <img src="assets/posts/bulgaria-rumunia-serbia/bulgaria.jpeg" alt="Bułgaria, Rumunia i Serbia" />
+          <div>
+            <span>2019</span>
+            <h3>Bułgaria, Rumunia, Serbia i Węgry</h3>
+            <p>Bałkański roadtrip – Bułgaria, Rumunia, Serbia i Węgry.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/bawaria-czechy.html">
+          <img src="assets/posts/bawaria-czechy/skalne-miasto.jpg" alt="Bawaria i Czechy" />
+          <div>
+            <span>2018</span>
+            <h3>Bawaria & Czechy</h3>
+            <p>Pięć dni między czeskimi miastami i bawarskimi zamkami.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="trip-card" data-tags="europa">
+        <a href="posts/czarnobyl.html">
+          <img src="assets/posts/czarnobyl/czarnobyl.jpeg" alt="Czarnobyl" />
+          <div>
+            <span>2016</span>
+            <h3>Czarnobyl i Kijów</h3>
+            <p>Strefa wykluczenia wokół Czarnobylskiej Elektrowni Atomowej i zabytki Kijowa.</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+    <!--wypad nad morze, lublin trip, sztokholm, bratyslawa, budapeszt, balaton, zamosc i okolice-->
+
+    <section class="map-strip" id="mapa" aria-label="Mapa wycieczek">
+      <div>
+        <p class="eyebrow">Tu byliśmy</p>
+        <h2 id="wyprawy">Mapa</h2>
+      </div>
+      <div id="travel-map" class="travel-map" aria-label="Interaktywna mapa świata z wycieczkami"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kłosie Zwiedzają</p>
+    <a href="#top">Do góry</a>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
