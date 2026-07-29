@@ -39,6 +39,57 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //gdansk
+    {
+      title: "Park Arkadia",
+      coords: [52.0757, 20.0613],
+      url: "posts/gdansk.html#arkadia",
+    },
+    {
+      title: "Grudziądz",
+      coords: [53.4841, 18.7537],
+      url: "posts/gdansk.html#arkadia",
+    },
+    {
+      title: "Gdańsk",
+      coords: [54.3520, 18.6466],
+      url: "posts/gdansk.html#gdansk",
+    },
+    {
+      title: "Sopot",
+      coords: [54.4418, 18.5600],
+      url: "posts/gdansk.html#sopot",
+    },
+    {
+      title: "Gdynia",
+      coords: [54.5189, 18.5305],
+      url: "posts/gdansk.html#sopot",
+    },
+    {
+      title: "Hel",
+      coords: [54.6084, 18.8015],
+      url: "posts/gdansk.html#sopot",
+    },
+    {
+      title: "Malbork",
+      coords: [54.0359, 19.0266],
+      url: "posts/gdansk.html#malbork",
+    },
+    {
+      title: "Kwidzyń",
+      coords: [53.7249, 18.9311],
+      url: "posts/gdansk.html#malbork",
+    },
+    {
+      title: "Biskupin",
+      coords: [52.7877, 17.7343],
+      url: "posts/gdansk.html#biskupin",
+    },
+    {
+      title: "Gniezno",
+      coords: [52.5346, 17.5820],
+      url: "posts/gdansk.html#biskupin",
+    },
     //czarnobyl
     {
       title: "Czarnobyl",
