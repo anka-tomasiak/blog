@@ -76,8 +76,8 @@ if (mapElement && window.L) {
       url: "posts/gdansk.html#malbork",
     },
     {
-      title: "Kwidzyń",
-      coords: [53.7249, 18.9311],
+      title: "Gniew",
+      coords: [53.8368, 18.8245],
       url: "posts/gdansk.html#malbork",
     },
     {
