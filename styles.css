@@ -446,7 +446,7 @@ h3 {
   font-size: clamp(2.35rem, 4.8vw, 3.7rem);
   line-height: 1.18;
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 980px;
 }
 
 .post-title-separator {
