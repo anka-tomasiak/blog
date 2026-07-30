@@ -39,6 +39,22 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //opole
+    {
+      title: "Kluczbork",
+      coords: [50.9728, 18.2182],
+      url: "posts/opole.html#kluczbork",
+    },
+    {
+      title: "Opole",
+      coords: [50.6689, 17.9230],
+      url: "posts/opole.html#opole",
+    },
+    {
+      title: "Zoo Opole",
+      coords: [50.6602, 17.9108],
+      url: "posts/opole.html#zoo",
+    },
     //zamosc
     {
       title: "Sandomierz",
