@@ -39,6 +39,22 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //zloty stok
+    {
+      title: "Zamek na Skale w Trzebieszowicach",
+      coords: [50.3488, 16.8608],
+      url: "posts/ziemia-klodzka.html#zamek-na-skale",
+    },
+    {
+      title: "Lądek-Zdrój",
+      coords: [50.3434, 16.8795],
+      url: "posts/ziemia-klodzka.html#ladek-zdroj",
+    },
+    {
+      title: "Kopalnia Złota w Złotym Stoku",
+      coords: [50.4449, 16.8738],
+      url: "posts/ziemia-klodzka.html#zloty-stok",
+    },
     //opole
     {
       title: "Kluczbork",
