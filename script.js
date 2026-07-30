@@ -39,6 +39,27 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //zamosc
+    {
+      title: "Sandomierz",
+      coords: [50.6826, 21.7482],
+      url: "posts/zamosc.html#sandomierz",
+    },
+    {
+      title: "Zamość",
+      coords: [50.7231, 23.2519],
+      url: "posts/zamosc.html#zamosc",
+    },
+    {
+      title: "Browar Zwierzyniec",
+      coords: [50.6148, 22.9757],
+      url: "posts/zamosc.html#zwierzyniec",
+    },
+    {
+      title: "Rzeszów",
+      coords: [50.0412, 21.9991],
+      url: "posts/zamosc.html#zwierzyniec",
+    },
     //lublin
     {
       title: "Łańcut",
