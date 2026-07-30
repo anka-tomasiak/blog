@@ -9,7 +9,7 @@ function applyFeaturedLayout() {
   const visibleCards = getVisibleCards();
 
   visibleCards.forEach((card, index) => {
-    const positionInCycle = index % 12;
+    const positionInCycle = index % 10;
     const isFeaturedCard =
       positionInCycle === 3 ||
       positionInCycle === 9;
@@ -39,6 +39,32 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //lublin
+    {
+      title: "Łańcut",
+      coords: [50.0687, 22.2291],
+      url: "posts/lublin.html#lancut",
+    },
+    {
+      title: "Imielty Ług",
+      coords: [51.4459, 23.1378],
+      url: "posts/lublin.html#lancut",
+    },
+    {
+      title: "Lublin",
+      coords: [51.2470, 22.5684],
+      url: "posts/lublin.html#lublin",
+    },
+    {
+      title: "Poleski Park Narodowy",
+      coords: [51.4382, 23.1393],
+      url: "posts/lublin.html#poleski",
+    },
+    {
+      title: "Kazimierz Dolny",
+      coords: [51.3223, 21.9483],
+      url: "posts/lublin.html#poleski",
+    },
     //gdansk
     {
       title: "Park Arkadia",
