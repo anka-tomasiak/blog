@@ -40,9 +40,19 @@ const mapElement = document.querySelector("#travel-map");
 if (mapElement && window.L) {
   const trips = [
     {
+      title: "Dvůr Králové",
+      coords: [50.433, 15.8150],
+      url: "posts/praga.html#czwarty",
+    },
+    {
       title: "Praga",
       coords: [50.0875, 14.4214],
-      url: "posts/praga.html",
+      url: "posts/praga.html#drugi",
+    },
+    {
+      title: "Ostrawa",
+      coords: [49.8209, 18.2625],
+      url: "posts/praga.html#pierwszy",
     },
     //florencja
     {
