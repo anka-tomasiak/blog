@@ -39,6 +39,32 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //florencja
+    {
+      title: "Lublana",
+      coords: [46.0569, 14.5058],
+      url: "posts/wlochy-austria.html#lublana",
+    },
+    {
+      title: "Wenecja",
+      coords: [45.4408, 12.3155],
+      url: "posts/wlochy-austria.html#wenecja",
+    },
+    {
+      title: "Florencja",
+      coords: [43.7696, 11.2558],
+      url: "posts/wlochy-austria.html#florencja",
+    },
+    {
+      title: "Piza",
+      coords: [43.7228, 10.4017],
+      url: "posts/wlochy-austria.html#piza",
+    },
+    {
+      title: "Pałac Schönbrunn",
+      coords: [48.1845, 16.3122],
+      url: "posts/wlochy-austria.html#schonbrunn",
+    },
     //zloty stok
     {
       title: "Zamek na Skale w Trzebieszowicach",
