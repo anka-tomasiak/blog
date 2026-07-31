@@ -39,6 +39,11 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    {
+      title: "Praga",
+      coords: [50.0875, 14.4214],
+      url: "posts/praga.html",
+    },
     //florencja
     {
       title: "Lublana",
