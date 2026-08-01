@@ -39,6 +39,22 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //wieden
+    {
+      title: "Kahlenberg",
+      coords: [48.2714, 16.3320],
+      url: "posts/wieden.html#schonbrunn",
+    },
+    {
+      title: "Pałac Schönbrunn",
+      coords: [48.1845, 16.3122],
+      url: "posts/wieden.html#schonbrunn",
+    },
+    {
+      title: "Centrum Wiednia",
+      coords: [48.2085, 16.3721],
+      url: "posts/wieden.html#centrum",
+    },
     {
       title: "Dvůr Králové",
       coords: [50.433, 15.8150],
