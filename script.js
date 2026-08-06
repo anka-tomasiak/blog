@@ -39,6 +39,11 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    {
+      title: "Toruń",
+      coords: [53.0138, 18.5984],
+      url: "posts/torun.html",
+    },
     //wieden
     {
       title: "Kahlenberg",
