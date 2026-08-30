@@ -39,6 +39,42 @@ const mapElement = document.querySelector("#travel-map");
 
 if (mapElement && window.L) {
   const trips = [
+    //belgia
+    {
+      title: "Bruksela",
+      coords: [50.8467, 4.3525],
+      url: "posts/belgia.html#bruksela",
+    },
+    {
+      title: "Brugia",
+      coords: [51.2093, 3.2247],
+      url: "posts/belgia.html#brugia",
+    },
+    {
+      title: "Gandawa",
+      coords: [51.0543, 3.7174],
+      url: "posts/belgia.html#brugia",
+    },
+    {
+      title: "Antwerpia",
+      coords: [51.2194, 4.4025],
+      url: "posts/belgia.html#antwerpia",
+    },
+    {
+      title: "Pairi Daiza",
+      coords: [50.5858, 3.8847],
+      url: "posts/belgia.html#pairi",
+    },
+    {
+      title: "Amsterdam",
+      coords: [52.3676, 4.9041],
+      url: "posts/belgia.html#amsterdam",
+    },
+    {
+      title: "De Schorre",
+      coords: [51.0864, 4.3721],
+      url: "posts/belgia.html#schorre",
+    },
     {
       title: "Toruń",
       coords: [53.0138, 18.5984],
